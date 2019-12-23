@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Todo-list</title>
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <template id = "login">
+            <form class="form-login">
+                <h1 class="h1">Login</h1>
+                <input type="text" id="email" name="login" class="input-login" placeholder="Email">
+                <input type="password" id="password" name="password" class="input-login" placeholder="Password">
+                <button type="submit" class="button-submit">Submit</button>
+            </form>
+        </template>
+        <template id = "main">
+            <form class="form-main">
+                <h1 class="h1">TODO list</h1>
+                <button type="button" class="button-filter-all">All</button>
+                <button type="button" class="button-filter-completed">Completed</button>
+                <button type="button" class="button-filter-not-completed">Not Completed</button>
+                <input type="text" name="login" class="input-main" autocomplete="off" placeholder="What needs to be done?">
+                <button type="submit" class="button-add">Add</button>
+                <ul class="ul"></ul>
+            </form>
+        </template>
+        <main>
+            <section class = "app" id="app">
+
+            </section>
+        </main>
+        <script src="js/app.js" type="module"></script>
+    </body>
+</html>
