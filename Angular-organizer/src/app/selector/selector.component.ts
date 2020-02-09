@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DateService } from './shared/data.service';
+import { DateService } from '../shared/data.service';
 
 @Component({
   selector: 'app-selector',
@@ -8,7 +8,7 @@ import { DateService } from './shared/data.service';
 })
 export class SelectorComponent {
 
-  constructor(private dateService: DateService) { }
+  constructor(public dateService: DateService) { }
 
   go(dir: number) {
     this.dateService.changeMonth(dir)

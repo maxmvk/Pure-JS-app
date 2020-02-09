@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
-import { DateService } from '../selector/shared/data.service';
+import { DateService } from '../shared/data.service';
 
 interface Day {
   value: moment.Moment
@@ -22,7 +22,7 @@ export class CalendarComponent implements OnInit {
 
   calendar: Week[]
 
-  constructor(private dateService: DateService) { }
+  constructor(public dateService: DateService) { }
 
   ngOnInit() {
     this.dateService.date.subscribe(this.generate.bind(this))
